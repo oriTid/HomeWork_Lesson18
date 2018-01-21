@@ -70,6 +70,10 @@
   </ItemGroup>
   <ItemGroup>
     <TypeScriptCompile Include="app.ts" />
+    <TypeScriptCompile Include="Crew.ts" />
+    <TypeScriptCompile Include="Customer.ts" />
+    <TypeScriptCompile Include="Person.ts" />
+    <TypeScriptCompile Include="Pilots.ts" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />

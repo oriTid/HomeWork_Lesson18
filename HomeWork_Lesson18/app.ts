@@ -1,28 +1,15 @@
-﻿class Greeter {
-    element: HTMLElement;
-    span: HTMLElement;
-    timerToken: number;
+﻿
+let pilot1: PILOTS = new PILOTS(1812, "Ori", "Tidhar",15);
 
-    constructor(element: HTMLElement) {
-        this.element = element;
-        this.element.innerHTML += "The time is: ";
-        this.span = document.createElement('span');
-        this.element.appendChild(this.span);
-        this.span.innerText = new Date().toUTCString();
-    }
+let attendet1: CREW = new CREW("Ofir", "Nusbaum", 11, "ISRAEL", "First Class");
 
-    start() {
-        this.timerToken = setInterval(() => this.span.innerHTML = new Date().toUTCString(), 500);
-    }
+let attendet2: CREW = new CREW("Zvi", "Rom", 2, "ISRAEL", "", "Security Officer");
 
-    stop() {
-        clearTimeout(this.timerToken);
-    }
+let customer1: CUSTOMER = new CUSTOMER("Noam", "Tidhar",342333432);
 
-}
 
-window.onload = () => {
-    var el = document.getElementById('content');
-    var greeter = new Greeter(el);
-    greeter.start();
-};
+pilot1.printPilot();
+attendet1.printCrew();
+attendet2.printCrew();
+customer1.customerPrint();
+
